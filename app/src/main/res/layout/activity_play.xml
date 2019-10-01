@@ -7,34 +7,68 @@
     tools:context=".Tampilan.Play">
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:id="@+id/soal14"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/soal13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/soal11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="1"
         android:onClick="soal1"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:id="@+id/soal13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:onClick="soal2"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        android:maxLength="1"
+        android:onClick="soal3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/soal12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/soal12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/soal11"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="310dp" />
+        app:layout_constraintGuide_begin="381dp" />
 
     <FrameLayout
         android:id="@+id/soallayout"
@@ -46,4 +80,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
     </FrameLayout>
+
+    <Button
+        android:id="@+id/button_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="handlehasil"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

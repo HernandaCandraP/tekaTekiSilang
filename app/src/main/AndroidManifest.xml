@@ -4,12 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ttsbg"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tampilan.Play"></activity>
+        <activity android:name=".Tampilan.Hasil"></activity>
+        <activity android:name=".Tampilan.Play" />
         <activity android:name=".Tampilan.Profil" />
         <activity android:name=".Tampilan.Home" />
         <activity android:name=".MainActivity">
