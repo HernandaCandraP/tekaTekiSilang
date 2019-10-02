@@ -6,69 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Tampilan.Play">
 
-    <EditText
-        android:id="@+id/soal14"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/rounded_border_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:maxLength="1"
-        android:onClick="soal2"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/soal13"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/soal11"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/rounded_border_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:maxLength="1"
-        android:onClick="soal1"
-        android:textAllCaps="true"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/soal13"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/rounded_border_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:maxLength="1"
-        android:onClick="soal3"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/soal12"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/soal12"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/rounded_border_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:maxLength="1"
-        android:onClick="soal4"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/soal11"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="381dp" />
+        app:layout_constraintGuide_begin="480dp" />
 
     <FrameLayout
         android:id="@+id/soallayout"
@@ -85,8 +28,181 @@
         android:id="@+id/button_hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="handlehasil"
         android:text="Hasil"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="handlehasil"/>
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit11" />
+
+    <EditText
+        android:id="@+id/edit13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit12" />
+
+    <EditText
+        android:id="@+id/edit14"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit13" />
+
+    <EditText
+        android:id="@+id/edit15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit14" />
+
+    <EditText
+        android:id="@+id/edit16"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit15" />
+
+    <EditText
+        android:id="@+id/edit17"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit16" />
+
+    <EditText
+        android:id="@+id/edit18"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:onClick="soal1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="247dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <EditText
+        android:id="@+id/edit21"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:onClick="soal2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/edit23"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:onClick="soal2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/edit14" />
+
+    <EditText
+        android:id="@+id/edit24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:onClick="soal2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/edit23" />
 </androidx.constraintlayout.widget.ConstraintLayout>

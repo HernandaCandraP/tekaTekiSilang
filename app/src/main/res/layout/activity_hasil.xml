@@ -6,49 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".Tampilan.Hasil">
 
-    <EditText
-        android:id="@+id/soal14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soal13" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/soal14"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/colorAccent"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/soal13" />-->
 
-    <EditText
-        android:id="@+id/soal11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/soal11"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/blue"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <EditText
-        android:id="@+id/soal13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soal12" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/soal13"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/blue"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/soal12" />-->
 
-    <EditText
-        android:id="@+id/soal12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soal11" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/soal12"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/colorAccent"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/soal11" />-->
 
     <TextView
         android:id="@+id/ket"
@@ -56,5 +56,168 @@
         android:layout_height="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soal14" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit11" />
+
+    <EditText
+        android:id="@+id/edit13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit12" />
+
+    <EditText
+        android:id="@+id/edit14"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit13" />
+
+    <EditText
+        android:id="@+id/edit15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit14" />
+
+    <EditText
+        android:id="@+id/edit16"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit15" />
+
+    <EditText
+        android:id="@+id/edit17"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit16" />
+
+    <EditText
+        android:id="@+id/edit18"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/edit17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="247dp" />
+
+    <EditText
+        android:id="@+id/edit21"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5" />
+
+    <EditText
+        android:id="@+id/edit23"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/edit24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edit23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <TextView
+        android:id="@+id/ket2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ket" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
