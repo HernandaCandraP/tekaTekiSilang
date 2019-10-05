@@ -58,105 +58,97 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit11"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/guideline9" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit12"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit11" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit13"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit12" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit14"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit13" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit15"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit14" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit16"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit15" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit17"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/edit16" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit18"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/rounded_border_edittext"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -169,7 +161,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="247dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit21"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -180,7 +172,7 @@
         app:layout_constraintBottom_toTopOf="@+id/edit15"
         app:layout_constraintEnd_toStartOf="@+id/guideline5" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit23"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -191,7 +183,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
-    <EditText
+    <TextView
         android:id="@+id/edit24"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -207,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="120dp" />
+        app:layout_constraintGuide_begin="145dp" />
 
     <TextView
         android:id="@+id/ket2"
@@ -218,6 +210,180 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ket" />
+
+
+    <TextView
+        android:id="@+id/edit32"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/edit34"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/edit33" />
+
+    <TextView
+        android:id="@+id/edit33"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/edit32" />
+
+    <TextView
+        android:id="@+id/edit35"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/edit34" />
+
+    <TextView
+        android:id="@+id/edit36"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/edit35" />
+
+    <TextView
+        android:id="@+id/edit41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/edit36" />
+
+    <TextView
+        android:id="@+id/edit43"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintStart_toEndOf="@+id/edit36" />
+
+    <TextView
+        android:id="@+id/edit44"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintStart_toEndOf="@+id/edit43" />
+
+    <TextView
+        android:id="@+id/edit45"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintStart_toEndOf="@+id/edit44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="235dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="397dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="1"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/edit11" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="2"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/edit21"
+        app:layout_constraintTop_toTopOf="@+id/edit21" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="3"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/edit17"
+        app:layout_constraintTop_toTopOf="@+id/edit17" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="4"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/edit41"
+        app:layout_constraintTop_toTopOf="@+id/edit41" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
