@@ -4,14 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tampilan.Home">
+    tools:context=".Tampilan.Home"
+    android:background="@drawable/ttsbg">
 
     <Button
         android:id="@+id/button_play"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:background="@drawable/btn_rounded"
         android:onClick="play"
         android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,9 +28,14 @@
         android:id="@+id/button_exit"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_rounded"
         android:lineSpacingExtra="14sp"
         android:onClick="exit"
         android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,9 +45,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/blue">
 
         <ImageView
             android:id="@+id/profil"
@@ -52,17 +65,25 @@
             android:layout_height="match_parent"
             android:gravity="center|left"
             android:text="no name"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="handleprofil"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnprofil"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="@string/profil"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_rounded"
         android:onClick="handleprofil"
+        android:text="@string/profil"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_play" />
 
