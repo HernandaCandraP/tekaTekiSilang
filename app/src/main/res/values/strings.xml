@@ -3,4 +3,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="soal1">Tempat peyimpanan data</string>
+    <string name="soal2">Bahasa pemrogaman android</string>
+    <string name="soal3">Tipe Data Bahasa Pemrogaman Java</string>
+    <string name="soal4">Metodelogi Pengembangan Perangkat Lunak</string>
+    <string name="play">Play</string>
+    <string name="profil">Profil</string>
+    <string name="exit">Exit</string>
+    <string name="hasil">Result</string>
+    <string name="nama">Nama :</string>
+    <string name="inputname">Input Your Name</string>
 </resources>

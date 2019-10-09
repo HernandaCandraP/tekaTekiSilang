@@ -18,18 +18,18 @@
 
         <ImageView
             android:id="@+id/img"
-            android:layout_width="106dp"
-            android:layout_height="115dp"
-            android:onClick="handleimg"
+            android:layout_width="35dp"
+            android:layout_height="82dp"
             android:layout_weight="1"
+            android:onClick="handleimg"
             app:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="106dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nama : "
+            android:text="@string/nama"
             android:textStyle="bold" />
 
         <EditText
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="name"
+            android:hint="@string/inputname"
             android:inputType="textPersonName" />
     </LinearLayout>
 

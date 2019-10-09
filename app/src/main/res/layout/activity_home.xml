@@ -11,7 +11,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:onClick="play"
-        android:text="Play"
+        android:text="@string/play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -25,7 +25,7 @@
         android:layout_height="50dp"
         android:lineSpacingExtra="14sp"
         android:onClick="exit"
-        android:text="exit"
+        android:text="@string/exit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,23 +41,26 @@
 
         <ImageView
             android:id="@+id/profil"
-            android:layout_width="60dp"
+            android:layout_width="75dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/profile"
-            android:onClick="changeprofil"/>
+            android:onClick="changeprofil"
+            app:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="no name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnprofil"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Profil"
+        android:text="@string/profil"
         android:onClick="handleprofil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

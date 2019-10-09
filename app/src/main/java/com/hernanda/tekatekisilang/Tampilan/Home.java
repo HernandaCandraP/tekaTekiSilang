@@ -1,8 +1,10 @@
 package com.hernanda.tekatekisilang.Tampilan;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -62,8 +64,33 @@ public class Home extends AppCompatActivity {
         }
     }
 
+    public void close(){
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Konfirmasi Keluar");
+        alert.setMessage("Apakah ingin keluar dari Game?");
+        alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getBaseContext(), "see you", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+        alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        alert.create().show();
+    }
     public void exit(View view) {
-        finish();
+        close();
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        close();
     }
 
     public void play(View view) {
