@@ -4,13 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tampilan.Profil">
+    tools:context=".Tampilan.Profil"
+    android:background="@color/bgprofil">
+
+    <Button
+        android:id="@+id/buttonedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="5dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageView
+        android:id="@+id/fakeimg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/bglayoutprofil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,37 +48,41 @@
 
         <ImageView
             android:id="@+id/img"
-            android:layout_width="35dp"
+            android:layout_width="82dp"
             android:layout_height="82dp"
             android:layout_weight="1"
+            android:cropToPadding="false"
             android:onClick="handleimg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             app:srcCompat="@drawable/profile" />
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="256dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/nama"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="174dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/inputname"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="72dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/nama"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/inputname"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonedit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Profile"
-        android:onClick="EditProfile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

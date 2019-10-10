@@ -21,6 +21,7 @@ import com.hernanda.tekatekisilang.R;
 import java.io.IOException;
 
 import static com.hernanda.tekatekisilang.Tampilan.Profil.NAME;
+import static com.hernanda.tekatekisilang.Tampilan.Profil.PROFIL;
 
 public class Home extends AppCompatActivity {
 
@@ -39,7 +40,9 @@ public class Home extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String getname = extras.getString(NAME);
+            byte getprofil = extras.getByte(PROFIL);
             this.name.setText(getname);
+            this.profil.setImageResource(getprofil);
         }
     }
 
