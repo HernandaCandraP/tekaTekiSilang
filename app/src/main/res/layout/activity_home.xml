@@ -67,8 +67,7 @@
             android:text="no name"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:onClick="handleprofil"/>
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <Button

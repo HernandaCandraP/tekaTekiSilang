@@ -9,11 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tampilan.Hasil" android:screenOrientation="portrait"></activity>
-        <activity android:name=".Tampilan.Play" android:screenOrientation="portrait"/>
-        <activity android:name=".Tampilan.Profil" android:screenOrientation="portrait"/>
-        <activity android:name=".Tampilan.Home" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".Tampilan.Hasil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tampilan.Play"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tampilan.Profil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tampilan.Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

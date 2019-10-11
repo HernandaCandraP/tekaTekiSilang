@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tampilan.Play">
+    tools:context=".Tampilan.Play"
+    android:background="@drawable/ttsbg">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -28,7 +29,6 @@
         android:id="@+id/button_hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="handlehasil"
         android:text="@string/hasil"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent" />

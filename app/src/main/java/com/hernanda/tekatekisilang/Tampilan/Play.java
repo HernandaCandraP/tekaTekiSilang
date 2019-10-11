@@ -6,8 +6,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hernanda.tekatekisilang.Fragment.*;
 import com.hernanda.tekatekisilang.R;
@@ -32,6 +34,7 @@ public class Play extends AppCompatActivity {
     EditText edit32, edit33, edit34, edit35, edit36;
     EditText edit41, edit43, edit44, edit45;
     TextView edit12;
+    Button buttohasil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,24 @@ public class Play extends AppCompatActivity {
         edit44 = findViewById(R.id.edit44);
         edit45 = findViewById(R.id.edit45);
 
+        buttohasil = findViewById(R.id.button_hasil);
+        buttohasil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (edit11.length()==0 || edit13.length()==0 || edit14.length()==0 || edit15.length()==0 || edit16.length()==0 || edit17.length()==0 ||edit18.length()==0) {
+                    Toast.makeText(Play.this, "No. 1 belum terisi penuh", Toast.LENGTH_LONG).show();
+                }else if(edit21.length()==0 || edit23.length()==0 || edit24.length()==0){
+                    Toast.makeText(Play.this, "No. 2 belum terisi penuh", Toast.LENGTH_LONG).show();
+                }else if(edit32.length()==0 || edit33.length()==0 || edit34.length()==0 || edit35.length()==0 || edit36.length()==0 ){
+                    Toast.makeText(Play.this, "No. 3 belum terisi penuh", Toast.LENGTH_LONG).show();
+                }else if(edit41.length()==0 || edit43.length()==0 || edit44.length()==0 || edit45.length()==0){
+                    Toast.makeText(Play.this, "No. 4 belum terisi penuh", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    handlehasil();
+                }
+            }
+        });
     }
 
     public void soal1(View view) {
@@ -72,7 +93,6 @@ public class Play extends AppCompatActivity {
         }else {
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             fragmentTransaction.replace(R.id.soallayout, new Soal1Fragment(), "SOAL1_FRAGMENT");
-            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
     }
@@ -85,7 +105,6 @@ public class Play extends AppCompatActivity {
         }else {
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             fragmentTransaction.replace(R.id.soallayout, new Soal2Fragment(), "SOAL2_FRAGMENT");
-            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
     }
@@ -98,7 +117,6 @@ public class Play extends AppCompatActivity {
         }else {
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             fragmentTransaction.replace(R.id.soallayout, new Soal3Fragment(), "SOAL3_FRAGMENT");
-            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
     }
@@ -111,12 +129,11 @@ public class Play extends AppCompatActivity {
         }else {
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             fragmentTransaction.replace(R.id.soallayout, new Soal4Fragment(), "SOAL4_FRAGMENT");
-            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
     }
 
-    public void handlehasil(View view) {
+    public void handlehasil() {
 
         String edit_11 = edit11.getText().toString();
         String edit_12 = edit12.getText().toString();

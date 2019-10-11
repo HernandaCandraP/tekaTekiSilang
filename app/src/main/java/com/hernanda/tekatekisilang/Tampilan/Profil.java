@@ -26,7 +26,7 @@ public class Profil extends AppCompatActivity {
     public static final String NAME = "name";
     public static final String PROFIL = "profil";
 
-    private static final String TAG = Home.class.getCanonicalName();
+    private static final String TAG = Profil.class.getCanonicalName();
     private static final int GALLERY_REQUEST_CODE = 1;
     private EditText name;
     private ImageView profil, fakeprofil;
@@ -53,11 +53,7 @@ public class Profil extends AppCompatActivity {
                     Toast.makeText(Profil.this, "Profil Berhasil Disimpan", Toast.LENGTH_LONG).show();
 
                     EditProfile();
-                    String n = name.getText().toString();
-                    Intent intent = new Intent(Profil.this, Home.class);
-                    intent.putExtra(NAME, n);
-//                    intent.putExtra(PROFIL, profil);
-                    startActivity(intent);
+                    finish();
                 }
             }
         });
