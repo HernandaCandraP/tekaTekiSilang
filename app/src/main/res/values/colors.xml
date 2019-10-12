@@ -7,4 +7,7 @@
     <color name="white">#FFFFFF</color>
     <color name="bgprofil">#86C3F9</color>
     <color name="bglayoutprofil">#54038FF5</color>
+    <color name="black">#000000</color>
+    <color name="green">#2A4CAF50</color>
+    <color name="valid">#02E002</color>
 </resources>

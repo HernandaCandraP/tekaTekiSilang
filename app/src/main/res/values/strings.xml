@@ -13,4 +13,14 @@
     <string name="hasil">Result</string>
     <string name="nama">Nama :</string>
     <string name="inputname">Input Your Name</string>
+    <string name="score">Your Score</string>
+    <string name="penjelasan1">Database adalah kumpulan berbagai data dan informasi yang tersimpan dan tersusun di dalam komputer secara sistematik yang dapat diperiksa, diolah atau dimanipulasi dengan menggunakan program komputer untuk mendapatkan informasi dari basis data tersebut.</string>
+    <string name="penjelasan2">Java merupakan bahasa bahasa pemrograman tingkat tinggi yang berorientasi pada object dan program java tersusun dari bagian yang disebut dengan Class. Class terdiri dari metode- metode yang melakukan pekerjaan dan mengembalikan informasi setelah melakukan tugasnya.</string>
+    <string name="penjelasan3">String adalah tipe data untuk teks yang merupakan gabungan huruf, angka, whitespace (spasi), dan berbagai karakter. Fungsi ini digunakan untuk membuat identifier String/teks.</string>
+    <string name="penjelasan4">Agile adalah sekelompok metodologi pengembangan perangkat lunak yang didasarkan pada prinsip-prinsip yang sama atau pengembangan sistem jangka pendek yang memerlukan adaptasi cepat dari pengembang terhadap perubahan dalam bentuk apapun.</string>
+    <string name="penjelasan">Penjelasan :</string>
+    <string name="no4">4. AGILE</string>
+    <string name="no3">3. STRING</string>
+    <string name="no2">2. JAVA</string>
+    <string name="no1">1. DATABASE</string>
 </resources>
