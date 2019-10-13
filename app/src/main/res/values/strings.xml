@@ -7,7 +7,7 @@
     <string name="soal2">Bahasa pemrogaman android</string>
     <string name="soal3">Tipe Data Bahasa Pemrogaman Java</string>
     <string name="soal4">Metodelogi Pengembangan Perangkat Lunak</string>
-    <string name="play">Play</string>
+    <string name="play">PLAY</string>
     <string name="profil">Profil</string>
     <string name="exit">Exit</string>
     <string name="hasil">Result</string>
@@ -23,4 +23,17 @@
     <string name="no3">3. STRING</string>
     <string name="no2">2. JAVA</string>
     <string name="no1">1. DATABASE</string>
+    <string name="about">ABOUT</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="myname">Hernanda Candra P.</string>
+    <string name="change">Change Picture</string>
+    <string name="backhome">BACK TO HOME</string>
+    <string name="letsplay">Lets Play Teka-Teki Silang</string>
+    <string name="vp_play">Bermainlah dan tambah wawasan seputar dunia IT</string>
+    <string name="explanation">EXPLANATION</string>
+    <string name="vp_explanation">Terdapat penjalasan singkat tentang soal - soal TTS</string>
+    <string name="created">CREATED BY</string>
+    <string name="vp_crated">Game ini dibuat oleh Hernanda Candra P</string>
 </resources>

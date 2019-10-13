@@ -86,6 +86,9 @@ public class Profil extends AppCompatActivity {
         String name = this.name.getText().toString();
 
         Intent intent = new Intent(this, Home.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(NAME, name);
         startActivity(intent);
     }

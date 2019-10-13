@@ -10,4 +10,25 @@
     <color name="black">#000000</color>
     <color name="green">#2A4CAF50</color>
     <color name="valid">#02E002</color>
+
+
+    <color name="dot_dark_screen1">#03105A</color>
+    <color name="dot_dark_screen2">#03105A</color>
+    <color name="dot_dark_screen3">#03105A</color>
+
+    <color name="dot_light_screen1">#2C03105A</color>
+    <color name="dot_light_screen2">#2C03105A</color>
+    <color name="dot_light_screen3">#2C03105A</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
 </resources>

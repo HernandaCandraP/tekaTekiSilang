@@ -81,7 +81,7 @@ public class Home extends AppCompatActivity {
         alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
+                dialogInterface.cancel();
             }
         });
         alert.create().show();
@@ -109,5 +109,10 @@ public class Home extends AppCompatActivity {
     public void changeprofil(View view) {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, GALLERY_REQUEST_CODE);
+    }
+
+    public void handleabout(View view) {
+        Intent intent = new Intent(this, ViewPager.class);
+        startActivity(intent);
     }
 }
