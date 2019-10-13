@@ -31,6 +31,15 @@ public class Profil extends AppCompatActivity {
     private EditText name;
     private ImageView profil, fakeprofil;
     private Button buttonedit;
+    String img;
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +82,7 @@ public class Profil extends AppCompatActivity {
                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
                     profil.setImageBitmap(bitmap);
                     System.out.println(imageUri);
+                    setImg(String.valueOf(imageUri));
                     fakeprofil.setImageResource(0);
                 } catch (IOException e) {
                     Toast.makeText(this, "Can't load image", Toast.LENGTH_SHORT).show();
@@ -90,6 +100,7 @@ public class Profil extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(NAME, name);
+        intent.putExtra(PROFIL, getImg());
         startActivity(intent);
     }
 

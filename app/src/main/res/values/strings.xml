@@ -11,7 +11,7 @@
     <string name="profil">Profil</string>
     <string name="exit">Exit</string>
     <string name="hasil">Result</string>
-    <string name="nama">Nama :</string>
+    <string name="nama">Name :</string>
     <string name="inputname">Input Your Name</string>
     <string name="score">Your Score</string>
     <string name="penjelasan1">Database adalah kumpulan berbagai data dan informasi yang tersimpan dan tersusun di dalam komputer secara sistematik yang dapat diperiksa, diolah atau dimanipulasi dengan menggunakan program komputer untuk mendapatkan informasi dari basis data tersebut.</string>
@@ -28,7 +28,7 @@
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
     <string name="myname">Hernanda Candra P.</string>
-    <string name="change">Change Picture</string>
+    <string name="change">Change Profile</string>
     <string name="backhome">BACK TO HOME</string>
     <string name="letsplay">Lets Play Teka-Teki Silang</string>
     <string name="vp_play">Bermainlah dan tambah wawasan seputar dunia IT</string>

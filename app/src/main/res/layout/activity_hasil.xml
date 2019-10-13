@@ -383,7 +383,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingBottom="20dp"
                 android:background="@color/green">
 
                 <TextView
@@ -468,6 +467,12 @@
                     android:textStyle="bold"
                     android:onClick="handlehome"
                     android:text="@string/backhome" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"/>
 
             </LinearLayout>
 

@@ -73,7 +73,7 @@
             android:id="@+id/profil"
             android:layout_width="75dp"
             android:layout_height="60dp"
-            android:onClick="changeprofil"
+            android:padding="5dp"
             app:srcCompat="@drawable/profile" />
 
         <TextView
