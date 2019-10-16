@@ -42,6 +42,7 @@ public class Home extends AppCompatActivity {
     public void close(){
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Konfirmasi Keluar");
+        alert.setIcon(R.drawable.tts);
         alert.setMessage("Apakah ingin keluar dari Game?");
         alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override

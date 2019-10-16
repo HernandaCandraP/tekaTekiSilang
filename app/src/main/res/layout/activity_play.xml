@@ -384,8 +384,9 @@
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:fontFamily="monospace"
+        android:onClick="soal1"
         android:text="1"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="@+id/edit11" />
 
@@ -396,8 +397,9 @@
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:fontFamily="monospace"
+        android:onClick="soal2"
         android:text="2"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/edit21"
         app:layout_constraintTop_toTopOf="@+id/edit21" />
 
@@ -408,20 +410,22 @@
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:fontFamily="monospace"
+        android:onClick="soal3"
         android:text="3"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/edit17"
         app:layout_constraintTop_toTopOf="@+id/edit17" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="5dp"
-        android:layout_height="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:fontFamily="monospace"
+        android:onClick="soal4"
         android:text="4"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/edit41"
         app:layout_constraintTop_toTopOf="@+id/edit41" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -93,7 +93,11 @@ public class ViewPager extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        startActivity(new Intent(ViewPager.this, Home.class));
+        Intent intent = new Intent(ViewPager.this, Home.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
         finish();
     }
 
