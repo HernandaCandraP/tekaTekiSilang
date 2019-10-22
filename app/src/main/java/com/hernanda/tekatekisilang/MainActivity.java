@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.hernanda.tekatekisilang.Tampilan.Home;
+import com.hernanda.tekatekisilang.Tampilan.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, Home.class);
+                Intent i = new Intent(MainActivity.this, ViewPager.class);
                 startActivity(i);
                 finish();
             }

@@ -127,7 +127,6 @@ public class Hasil extends AppCompatActivity {
             }else {
                 this.ket3.setText(salah);
                 this.ket3.setTextColor(Color.RED);
-
             }
             if(soal41.equals("A") && soal36.equals("G") && soal43.equals("I") && soal44.equals("L")&& soal45.equals("E")){
                 this.ket4.setText(benar);

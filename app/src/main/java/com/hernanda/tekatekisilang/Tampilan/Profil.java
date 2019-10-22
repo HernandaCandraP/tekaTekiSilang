@@ -54,9 +54,7 @@ public class Profil extends AppCompatActivity {
         buttonedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (profil.getDrawable() == null) {
-                    Toast.makeText(Profil.this, "Input Foto Profil", Toast.LENGTH_LONG).show();
-                }else if(name.length() == 0){
+                if(name.length() == 0){
                     Toast.makeText(Profil.this, "Nama Belum Terisi", Toast.LENGTH_LONG).show();
                 }else {
                     Toast.makeText(Profil.this, "Profil Berhasil Disimpan", Toast.LENGTH_LONG).show();

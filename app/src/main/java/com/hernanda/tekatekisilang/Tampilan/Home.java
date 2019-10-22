@@ -35,7 +35,9 @@ public class Home extends AppCompatActivity {
             String getname = extras.getString(NAME);
             String getprofil = extras.getString(PROFIL);
             this.name.setText(getname);
-            this.profil.setImageURI(Uri.parse(getprofil));
+            if (getprofil != null) {
+                this.profil.setImageURI(Uri.parse(getprofil));
+            }
         }
     }
 
